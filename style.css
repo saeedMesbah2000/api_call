@@ -1,0 +1,181 @@
+/* set the size of texts to 18 px */
+* {
+  font-size: 18px;
+}
+/* style for input container
+we set height and width and adding a margin to have space between components and
+giving it a lightpink for background color and
+giving it 15px of border radius for rounded corners and 
+by using flexbox we manage the order (like row or column) of components and
+we put the components in the center with justify-content and align-items*/
+#container {
+  height: 400px;
+  width: 300px;
+  background-color: lightpink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/* style for input text 
+we set height and width and adding a margin to have space between components and
+giving it a darkcyan color for border with 2px of thickness and
+giving it 15px of border radius for rounded corners */
+#txt {
+  border-radius: 15px;
+  border: 2px solid darkcyan;
+  outline: none;
+  width: 70%;
+  /* set height to 30 px */
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+/* style for input button 
+we set height and width and adding a margin to have space between components and
+giving it a darkcyan color for border with 2px of thickness and
+giving it 15px of border radius for darkcyan corners and 
+we giving it transition for changing border color and background color for smooth change */
+#btn {
+  width: 40%;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 2px solid darkcyan;
+  transition: background-color 0.5s ease;
+  transition: border-color 0.5s ease;
+}
+
+/* we our cursor hovers the button it will change the color of button */
+#btn:hover {
+  background-color: lightgray;
+  border-color: lightyellow;
+}
+
+/* ------------------------------ */
+
+/* style for output container
+we set height and width and adding a margin to have space between components and
+giving it a lightcoral for background color and
+giving it 20px of border radius for rounded corners and 
+by using flexbox we manage the order (like row or column) of components and
+we put the components in the center with justify-content and align-items*/
+#contain {
+  height: 400px;
+  width: 600px;
+  background-color: lightcoral;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/* this is for styling image 
+by giving it height and width and
+giving it 20px of border radius for rounded corners and
+giving it a lightgray color for border with 2px of thickness */
+#image {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+
+/* style for top of the output 
+we set height and width and
+by using flexbox we manage the order (like row or column) of components and
+we put the components in the center and divide the space between them evenly with justify-content and align-items*/
+#top {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* style for bottom of the output 
+we set height and
+by using flexbox we manage the order (like row or column) of components and
+we put the components in the center with justify-content and align-items*/
+#bottom {
+  height: 40%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+/* style for inner component of the top component of output 
+we set width and
+by using flexbox we manage the order (like row or column) of components and*/
+#inner {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+/* style for main container
+we set height and
+giving it a lightgray for background color and
+by using flexbox we manage the order (like row or column) of components and
+we put the components in the center with justify-content and align-items*/
+#App {
+  height: 100vh;
+  background-color: lightgray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* style for main component
+by using flexbox we manage the order (like row or column) of components and
+we put the components in the center with justify-content and align-items*/
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style for input container
+we set width and adding a margin to have space between components and
+giving it a lightskyblue for succesfull attempt or red for wrong one for background color and
+giving it 15px of border radius for rounded corners and 
+by using flexbox we manage the order (like row or column) of components and
+we put the components in the center with justify-content and align-items*/
+footer {
+  width: 940px;
+  background-color: lightskyblue;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/* this is for responsive disign */
+@media only screen and (max-width: 800px) {
+  #App {
+    flex-direction: column;
+  }
+  #main {
+    flex-direction: column;
+    width: 60%;
+  }
+  #contain {
+    width: 100%;
+  }
+  #container {
+    width: 100%;
+  }
+  footer {
+    width: 60%;
+  }
+}
